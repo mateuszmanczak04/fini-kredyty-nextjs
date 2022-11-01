@@ -1,0 +1,38 @@
+.container {
+  h1 {
+    text-align: center;
+  }
+
+  h6 {
+    text-align: center;
+  }
+
+  .columns {
+    display: flex;
+    gap: 32px;
+    width: calc(100% - 32px);
+    flex-direction: column;
+    max-width: 500px;
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      p {
+        padding-bottom: 32px;
+        color: var(--black75);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    .columns {
+      flex-direction: row;
+      max-width: none;
+    }
+  }
+}

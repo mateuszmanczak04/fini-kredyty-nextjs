@@ -1,0 +1,49 @@
+.container {
+  gap: 64px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .services {
+    display: flex;
+    width: calc(100% - 32px);
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    // border: 1px solid var(--black25);
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+
+    h4 {
+      width: 100%;
+      flex: 1;
+      text-align: center;
+      color: var(--black75);
+      transition: 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--black5);
+        // color: var(--black);
+      }
+    }
+  }
+
+  .address {
+    text-align: center;
+    color: var(--black75);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    .services {
+      flex-direction: row;
+      max-width: 800px;
+    }
+  }
+}

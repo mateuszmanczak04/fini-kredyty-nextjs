@@ -1,0 +1,33 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  .list {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: var(--black75);
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    gap: 32px;
+
+    h1 {
+      flex: 1;
+    }
+
+    .list {
+      flex: 1;
+    }
+  }
+}

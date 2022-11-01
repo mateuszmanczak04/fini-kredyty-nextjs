@@ -1,0 +1,21 @@
+.container {
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    color: var(--black75);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    p {
+      width: 80%;
+      max-width: none;
+    }
+  }
+}
