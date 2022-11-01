@@ -35,7 +35,7 @@
     width: 80vw;
     background: white;
     display: flex;
-    gap: 32px;
+    gap: 16px;
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
@@ -45,6 +45,7 @@
     max-width: 300px;
     z-index: 20;
     padding-bottom: 200px;
+    padding-top: 100px;
 
     &.open {
       transform: translateX(0);
